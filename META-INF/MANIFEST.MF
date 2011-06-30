@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TAP
+Bundle-SymbolicName: tap; singleton:=true
+Bundle-Version: 1.0
+Bundle-Activator: org.tap4j.editor.TapActivator
+Bundle-Vendor: Bruno P. Kinoshita
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
