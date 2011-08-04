@@ -1,24 +1,28 @@
-package org.tap4j.editor;
+package org.tap4j.editor_;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
 /**
- * The activator class controls the plug-in life cycle
+ * Main class that integrates with Eclipse.
+ * 
+ * @author Bruno P. Kinoshita - http://www.kinoshita.eti.br
  */
-public class TapActivator extends AbstractUIPlugin {
+public class TAPEditorPlugin 
+extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "tap";
+	public static final String PLUGIN_ID = "TAP";
 
 	// The shared instance
-	private static TapActivator plugin;
+	private static TAPEditorPlugin pluginInstance;
 	
 	/**
 	 * The constructor
 	 */
-	public TapActivator() {
+	public TAPEditorPlugin() {
+		pluginInstance = this;
 	}
 
 	/*
@@ -27,7 +31,7 @@ public class TapActivator extends AbstractUIPlugin {
 	 */
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
-		plugin = this;
+		pluginInstance = this;
 	}
 
 	/*
@@ -35,7 +39,7 @@ public class TapActivator extends AbstractUIPlugin {
 	 * @see org.eclipse.ui.plugin.AbstractUIPlugin#stop(org.osgi.framework.BundleContext)
 	 */
 	public void stop(BundleContext context) throws Exception {
-		plugin = null;
+		pluginInstance = null;
 		super.stop(context);
 	}
 
@@ -44,8 +48,8 @@ public class TapActivator extends AbstractUIPlugin {
 	 *
 	 * @return the shared instance
 	 */
-	public static TapActivator getDefault() {
-		return plugin;
+	public static TAPEditorPlugin getDefault() {
+		return pluginInstance;
 	}
 
 	/**
@@ -58,4 +62,7 @@ public class TapActivator extends AbstractUIPlugin {
 	public static ImageDescriptor getImageDescriptor(String path) {
 		return imageDescriptorFromPlugin(PLUGIN_ID, path);
 	}
+	
+
+	
 }

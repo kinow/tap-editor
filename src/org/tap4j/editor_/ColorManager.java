@@ -1,4 +1,4 @@
-package org.tap4j.editor;
+package org.tap4j.editor_;
 
 import java.util.HashMap;
 import java.util.Iterator;

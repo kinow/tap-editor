@@ -1,4 +1,4 @@
-package org.tap4j.editor;
+package org.tap4j.editor_;
 
 import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.DocumentEvent;

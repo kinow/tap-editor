@@ -9,7 +9,7 @@
             extensions="tap"
             icon="icons/sample.gif"
             contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
-            class="org.tap4j.editor.TAPEditor"
+            class="org.tap4j.editor_.TAPEditor"
             id="org.tap4j.editor.TAPEditor">
       </editor>
    </extension>

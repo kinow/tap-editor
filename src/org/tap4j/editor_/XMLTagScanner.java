@@ -1,4 +1,4 @@
-package org.tap4j.editor;
+package org.tap4j.editor_;
 
 import org.eclipse.jface.text.*;
 import org.eclipse.jface.text.rules.*;
